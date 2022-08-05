@@ -342,7 +342,6 @@ footer a {
 
 @media (max-width: 740px) {
     .logo img {
-        width: 95%;
         min-width: 90px;
     }
     .solucoes .container {
@@ -395,6 +394,21 @@ footer a {
     li a {
         padding: 10px 5px;
     }
+}
+
+@media (max-width: 450px) {
+    nav ul li {
+        display: none;
+    }
+    nav ul .buttomWhats {
+        display: flex;
+        padding: 20px;
+    }
+    .buttomWhats a {
+        margin-left: 0px;
+        padding: 15px;
+    }
+
 }
 
 @media (max-width: 375px) {
