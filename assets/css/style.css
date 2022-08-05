@@ -21,7 +21,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: center;
-    height: 100px;
+    height: 120px;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 99;
     top: 0;
