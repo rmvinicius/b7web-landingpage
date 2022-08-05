@@ -352,13 +352,16 @@ footer a {
         text-align: center;
     }
     .containerImage {
-        right: 20px;
-        bottom: -200px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        right: 0px;
+        bottom: 0px;
     }
     .containerAbout {
         width: 100%;
         margin: 120px 0px 180px 0px;
-        padding: 40px 40px 240px 40px;
+        padding: 40px;
     }
     .sobre .title {
         width: 100%;
@@ -396,10 +399,6 @@ footer a {
     }
     .description p {
         font-size: 18px;
-    }
-    .containerImage {
-        right: 10px;
-        bottom: -100px;
     }
     .containerImage img {
         max-width: 300px;
