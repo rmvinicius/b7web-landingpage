@@ -361,6 +361,9 @@ footer a {
         right: 0px;
         bottom: 0px;
     }
+    .containerImage img {
+        max-width: 400px;
+    }
     .containerAbout {
         width: 100%;
         margin: 120px 0px 180px 0px;
