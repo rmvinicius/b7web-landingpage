@@ -341,6 +341,10 @@ footer a {
 }
 
 @media (max-width: 740px) {
+    .logo img {
+        width: 95%;
+        min-width: 90px;
+    }
     .solucoes .container {
         flex-direction: column;
     }
@@ -389,7 +393,7 @@ footer a {
         align-items: flex-start;
     }
     li a {
-        padding: 10px;
+        padding: 10px 5px;
     }
 }
 
@@ -416,6 +420,6 @@ footer a {
         font-size: 20px;
     }
     li a {
-        padding: 5px;
+        padding: 5px 3px;
     }
 }
