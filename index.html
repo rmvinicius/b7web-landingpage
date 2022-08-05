@@ -9,11 +9,11 @@
     <script src="https://kit.fontawesome.com/3661569a87.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<header>
+<header id="header">
     <div class="container">
         <div class="logo">
             <a href="https://seuluizca.com.br">
-                <img src="assets/images/logo.png" alt="Logo do Seu Luiz">
+                <img id="imageLogo" src="assets/images/logo.png" alt="Logo do Seu Luiz">
             </a>
         </div>
         <div class="menu">
@@ -24,10 +24,9 @@
                     <div class="mm_line"></div>
                 </div>
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Serviços</a></li>
-                    <li><a href="">Sobre</a></li>
-                    <li><a href="">Contato</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
                     <li class="buttomWhats"><a href="">WhatsApp</a></li>
                 </ul>
             </nav>
@@ -36,10 +35,12 @@
 </header>
 <section class="banner">
     <div class="container containerColumn">
-        <h1>Bem-vindo a <span>Koala Informática</span></h1>
+        <h1>Bem-vindo ao <span>Grupo Koala</span></h1>
         <h2>Criando soluções e conectando você a tecnologia</h2>
     </div>
 </section>
+<div id="servicos"></div>
+<div style="margin-bottom: 80px;"></div>
 <section class="solucoes">
     <div class="title">
         <h1>Serviços</h1>
@@ -62,6 +63,7 @@
         </div>
     </div>
 </section>
+<div id="sobre"></div>
 <section class="sobre">
     <div class="container">
         <div class="containerAbout">
@@ -78,6 +80,7 @@
         </div>
     </div>
 </section>
+<div id="contato"></div>
 <footer class="contato">
     <div class="container containerColumn">
         <h1>Localização e Contato</h1>
@@ -104,5 +107,18 @@
     </div>
     <p>Copyright © 2022 | Koala Informática</p>
 </footer>
+<script>
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            document.getElementById("header").style.height = "80px";
+            document.getElementById("header").style.background = "black";
+        } else {
+            document.getElementById("header").style.height = "100px";
+            document.getElementById("header").style.background = "rgba(0, 0, 0, 0.8)";
+        }
+    }
+</script>
 </body>
 </html>
